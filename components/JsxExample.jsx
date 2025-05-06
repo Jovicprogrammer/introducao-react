@@ -1,3 +1,5 @@
+import { use } from 'react'
+import "../style.css"
 export function JsxExample({career}) {
 
     const name = "Reporter"
@@ -7,8 +9,8 @@ export function JsxExample({career}) {
     }
 
     return (
-        <div>
-            <h2>America... America has a problem</h2>
+        <div className="divJSX">
+            <h2 className='h2JSX'>America... America has a problem</h2>
             <p>this Barbie is a {career}</p>
             <p>
                 this user {user.firstName} is a {name}.

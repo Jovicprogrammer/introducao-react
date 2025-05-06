@@ -5,11 +5,13 @@ export function App() {
 
     return (
         <div className="App">
-            <h2>Vamos Começar...</h2>
-            <Hello nome={"Stefani Gergamotta"}/>
+            <h2 className='h2-App'>Vamos Começar...</h2>
+            <span className='span-app'>
+                <Hello nome={"Stefani Gergamotta"}/>
+            </span>
             <p>Olá mundo! você se encontra na primeira página...</p>
 
-            <h2>O que vem por aí?</h2>
+            <h2 className='h2-App'>O que vem por aí?</h2>
             <p>
                 Não agora, mas logo tudo vai estar prontinho para alcançar o conhecimento de todos! Aguarde 👀
             </p>
