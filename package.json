@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Jovicprogrammer/introducao-react/issues"
   },
-  "homepage": "https://github.com/Jovicprogrammer/introducao-react#readme"
+  "homepage": "https://github.com/Jovicprogrammer/introducao-react#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  }
 }
