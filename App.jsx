@@ -1,5 +1,7 @@
+import Greeting from './components/Greeting.jsx';
 import { Hello } from './components/Hello.jsx';
 import { JsxExample } from './components/JsxExample.jsx';
+import { Welcome } from './components/Welcome.jsx';
 
 export function App() {
 
@@ -17,6 +19,10 @@ export function App() {
             </p>
 
             <JsxExample career={"Baseball Bat"}/>
+
+            <Welcome name={'Lola'}/>
+
+            <Greeting name={'Gergamotta'} age={39}/>
 
         </div>
     )

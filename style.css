@@ -1,13 +1,15 @@
 .divJSX {
-    background-color: royalblue;
+    background-color: #93cdef;
 }
 
-.h2-App { background-color: rgb(255, 212, 71); }
+.h2-App { background-color: #F0C752; }
 
 .App {
-    background-color: palevioletred;
+    background-color: #83C34B;
 }
 
-.h2JSX { background-color: aquamarine; }
+.h2JSX { background-color: #5699B5; }
 
 .span-app { color: antiquewhite; }
+
+.div-welcome { background-color: #C1D1E8        ; }

@@ -1,20 +1,24 @@
 .divJSX {
-  background-color: #4169e1;
+  background-color: #93cdef;
 }
 
 .h2-App {
-  background-color: #ffd447;
+  background-color: #f0c752;
 }
 
 .App {
-  background-color: #db7093;
+  background-color: #83c34b;
 }
 
 .h2JSX {
-  background-color: #7fffd4;
+  background-color: #5699b5;
 }
 
 .span-app {
   color: #faebd7;
+}
+
+.div-welcome {
+  background-color: #c1d1e8;
 }
 /*# sourceMappingURL=introducao-react.aa436662.css.map */
