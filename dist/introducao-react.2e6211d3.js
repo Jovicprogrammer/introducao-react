@@ -16106,6 +16106,8 @@ parcelHelpers.export(exports, "App", ()=>App);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _counterJsx = require("./components/Counter.jsx");
 var _counterJsxDefault = parcelHelpers.interopDefault(_counterJsx);
+var _eventExampleJsx = require("./components/EventExample.jsx");
+var _eventExampleJsxDefault = parcelHelpers.interopDefault(_eventExampleJsx);
 var _greetingJsx = require("./components/Greeting.jsx");
 var _greetingJsxDefault = parcelHelpers.interopDefault(_greetingJsx);
 var _helloJsx = require("./components/Hello.jsx");
@@ -16124,18 +16126,18 @@ function App() {
                 children: "Vamos Come\xe7ar..."
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 13
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoListJsxDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _eventExampleJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 36,
+                lineNumber: 39,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 9
     }, this);
 }
@@ -16148,7 +16150,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./components/Counter.jsx":"5LyVk","./components/Greeting.jsx":"eSRjc","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU","./components/LoginControl.jsx":"iy7fy","./components/TodoList.jsx":"hAK2W","./components/Welcome.jsx":"gIVXj","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"5LyVk":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./components/Counter.jsx":"5LyVk","./components/Greeting.jsx":"eSRjc","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU","./components/LoginControl.jsx":"iy7fy","./components/TodoList.jsx":"hAK2W","./components/Welcome.jsx":"gIVXj","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./components/EventExample.jsx":"7sQqW"}],"5LyVk":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$563c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$563c.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18786,6 +18788,10 @@ function ToDoList() {
         {
             id: 4,
             text: 'Atualizar o Github'
+        },
+        {
+            id: 5,
+            text: 'Fazer as atividades'
         }
     ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18794,7 +18800,7 @@ function ToDoList() {
                 children: "Lista de Tarefas"
             }, void 0, false, {
                 fileName: "components/TodoList.jsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -18803,19 +18809,19 @@ function ToDoList() {
                         children: task.text
                     }, index, false, {
                         fileName: "components/TodoList.jsx",
-                        lineNumber: 18,
+                        lineNumber: 19,
                         columnNumber: 33
                     }, this);
                 })
             }, void 0, false, {
                 fileName: "components/TodoList.jsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "components/TodoList.jsx",
-        lineNumber: 12,
+        lineNumber: 13,
         columnNumber: 9
     }, this);
 }
@@ -18884,6 +18890,84 @@ $RefreshReg$(_c, "Welcome");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["cAXQq","3UcWX"], "3UcWX", "parcelRequire150d", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"7sQqW":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$de9d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$de9d.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$de9d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>EventExample);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function EventExample() {
+    _s();
+    const [inputValue, setInputValue] = (0, _react.useState)('');
+    const handleChange = (e)=>{
+        setInputValue(e.target.value);
+    };
+    const handleClick = ()=>{
+        console.log('botao clicado!');
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Exemplo de Evento"
+            }, void 0, false, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 11,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: handleClick,
+                children: "Clique-me!"
+            }, void 0, false, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 13,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                onChange: handleChange,
+                type: "text",
+                value: inputValue,
+                placeholder: "Digite algo..."
+            }, void 0, false, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 15,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Voc\xea digitou: ",
+                    inputValue,
+                    " "
+                ]
+            }, void 0, true, {
+                fileName: "components/EventExample.jsx",
+                lineNumber: 21,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/EventExample.jsx",
+        lineNumber: 10,
+        columnNumber: 9
+    }, this);
+}
+_s(EventExample, "SORcW8kVWUa8fZ+un8oXhp/OLnk=");
+_c = EventExample;
+var _c;
+$RefreshReg$(_c, "EventExample");
+
+  $parcel$ReactRefreshHelpers$de9d.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}]},["cAXQq","3UcWX"], "3UcWX", "parcelRequire150d", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=introducao-react.2e6211d3.js.map
