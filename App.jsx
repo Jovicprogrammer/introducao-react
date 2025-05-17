@@ -1,4 +1,5 @@
 import Counter from './components/Counter.jsx';
+import CounterEffect from './components/CounterEffect.jsx';
 import EventExample from './components/EventExample.jsx';
 import Greeting from './components/Greeting.jsx';
 import { Hello } from './components/Hello.jsx';
@@ -36,7 +37,9 @@ export function App() {
 
             {/* <ToDoList/> */}
 
-            <EventExample/>
+            {/* <EventExample/> */}
+
+            <CounterEffect/>
 
         </div>
     )
