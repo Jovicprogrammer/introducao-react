@@ -16110,6 +16110,8 @@ var _counterEffectJsx = require("./components/CounterEffect.jsx");
 var _counterEffectJsxDefault = parcelHelpers.interopDefault(_counterEffectJsx);
 var _eventExampleJsx = require("./components/EventExample.jsx");
 var _eventExampleJsxDefault = parcelHelpers.interopDefault(_eventExampleJsx);
+var _formExampleJsx = require("./components/FormExample.jsx");
+var _formExampleJsxDefault = parcelHelpers.interopDefault(_formExampleJsx);
 var _greetingJsx = require("./components/Greeting.jsx");
 var _greetingJsxDefault = parcelHelpers.interopDefault(_greetingJsx);
 var _helloJsx = require("./components/Hello.jsx");
@@ -16128,18 +16130,18 @@ function App() {
                 children: "Vamos Come\xe7ar..."
             }, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 13
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _counterEffectJsxDefault.default), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _formExampleJsxDefault.default), {}, void 0, false, {
                 fileName: "App.jsx",
-                lineNumber: 42,
+                lineNumber: 45,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "App.jsx",
-        lineNumber: 14,
+        lineNumber: 15,
         columnNumber: 9
     }, this);
 }
@@ -16152,7 +16154,7 @@ $RefreshReg$(_c, "App");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./components/Counter.jsx":"5LyVk","./components/CounterEffect.jsx":"8XHvK","./components/EventExample.jsx":"7sQqW","./components/Greeting.jsx":"eSRjc","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU","./components/LoginControl.jsx":"iy7fy","./components/TodoList.jsx":"hAK2W","./components/Welcome.jsx":"gIVXj","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"5LyVk":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./components/Counter.jsx":"5LyVk","./components/CounterEffect.jsx":"8XHvK","./components/EventExample.jsx":"7sQqW","./components/FormExample.jsx":"idmes","./components/Greeting.jsx":"eSRjc","./components/Hello.jsx":"aRs8i","./components/JsxExample.jsx":"3MFiU","./components/LoginControl.jsx":"iy7fy","./components/TodoList.jsx":"hAK2W","./components/Welcome.jsx":"gIVXj","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"5LyVk":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$563c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$563c.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -18690,6 +18692,158 @@ var _c;
 $RefreshReg$(_c, "EventExample");
 
   $parcel$ReactRefreshHelpers$de9d.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"idmes":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$9554 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$9554.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9554.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>FormExample);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function FormExample() {
+    _s();
+    const [formData, setFormData] = (0, _react.useState)({
+        nome: '',
+        email: '',
+        inscrito: false
+    });
+    const handleChange = (e)=>{
+        const { name, value, type, checked } = e.target;
+        setFormData((prev)=>[
+                {
+                    ...prev,
+                    [name]: type === 'checkbox' ? checked : value
+                }
+            ]);
+    };
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        alert(`Dados enviados ${JSON.stringify(formData)}`);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Formul\xe1rio Controlado"
+            }, void 0, false, {
+                fileName: "components/FormExample.jsx",
+                lineNumber: 29,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: handleSubmit,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Nome:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "text",
+                                    name: "nome",
+                                    value: formData.nome,
+                                    onChange: handleChange
+                                }, void 0, false, {
+                                    fileName: "components/FormExample.jsx",
+                                    lineNumber: 36,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "components/FormExample.jsx",
+                            lineNumber: 34,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 33,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Email:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    name: "email",
+                                    value: formData.email,
+                                    onChange: handleChange
+                                }, void 0, false, {
+                                    fileName: "components/FormExample.jsx",
+                                    lineNumber: 47,
+                                    columnNumber: 25
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "components/FormExample.jsx",
+                            lineNumber: 45,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 44,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "checkbox",
+                                    name: "inscrito",
+                                    checked: formData.inscrito,
+                                    onChange: handleChange
+                                }, void 0, false, {
+                                    fileName: "components/FormExample.jsx",
+                                    lineNumber: 57,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "components/FormExample.jsx",
+                                lineNumber: 56,
+                                columnNumber: 21
+                            }, this),
+                            "Assinar newsletter"
+                        ]
+                    }, void 0, true, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 55,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        children: "Enviar"
+                    }, void 0, false, {
+                        fileName: "components/FormExample.jsx",
+                        lineNumber: 66,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "components/FormExample.jsx",
+                lineNumber: 31,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "components/FormExample.jsx",
+        lineNumber: 27,
+        columnNumber: 9
+    }, this);
+}
+_s(FormExample, "JBzzkWutBs6fEG+Dt+d8xI2E/d0=");
+_c = FormExample;
+var _c;
+$RefreshReg$(_c, "FormExample");
+
+  $parcel$ReactRefreshHelpers$9554.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;

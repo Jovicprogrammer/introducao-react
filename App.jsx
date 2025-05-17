@@ -1,6 +1,7 @@
 import Counter from './components/Counter.jsx';
 import CounterEffect from './components/CounterEffect.jsx';
 import EventExample from './components/EventExample.jsx';
+import FormExample from './components/FormExample.jsx';
 import Greeting from './components/Greeting.jsx';
 import { Hello } from './components/Hello.jsx';
 import { JsxExample } from './components/JsxExample.jsx';
@@ -39,7 +40,9 @@ export function App() {
 
             {/* <EventExample/> */}
 
-            <CounterEffect/>
+            {/* <CounterEffect/> */}
+
+            <FormExample/>
 
         </div>
     )
