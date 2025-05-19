@@ -6,6 +6,8 @@ import Greeting from './components/Greeting.jsx';
 import { Hello } from './components/Hello.jsx';
 import { JsxExample } from './components/JsxExample.jsx';
 import LoginControl from './components/LoginControl.jsx';
+import Message from './components/Message.jsx';
+import MessageList from './components/MessageList.jsx';
 import ToDoList from './components/TodoList.jsx';
 import { Welcome } from './components/Welcome.jsx';
 
@@ -42,7 +44,11 @@ export function App() {
 
             {/* <CounterEffect/> */}
 
-            <FormExample/>
+            {/* <FormExample/> */}
+
+            {/* <Message text={'oi mundo!'} onDismiss={() => {alert("Mensagem fechada")}}/> */}
+
+            <MessageList/>
 
         </div>
     )
